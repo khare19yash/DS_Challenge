@@ -34,3 +34,11 @@ The following improvements can be made in the given order of priority -
    2. Probably train a regression model to replace missing values.
    3. Tuning various hyperparameters to make the model more robust. 
    4. Trian different models like Random forests, SVM and compare their accuracy 
+
+## Important Notes
+**As the test data is too big (892816 rows) it is better to divide it in small chunks (Probably 100000 rows or less) and then run the model otherwise out of memory error may appear**
+
+**I have uploaded both the python script and the ipython notebook. To understand the model and all the data preprocessing steps use the ipyton notebook and to get the result run the python script.**
+```
+python model.py
+```
