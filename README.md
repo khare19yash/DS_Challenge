@@ -1,4 +1,4 @@
-**Briefly describe the conceptual approach you chose! What are the tradeoffs? 
+**Briefly describe the conceptual approach you chose! What are the tradeoffs?** 
 
 To solve this classification problem, I implemented a four-layer feed forward neural network.  The network consists of three hidden layers of size 128,64 and 32 respectively and an output layer. After the output layer there is a SoftMax layer which predicts the probability of each class.
 
@@ -18,13 +18,15 @@ For data preprocessing the following steps were taken
    - Missing values in categorical variables were replaced by NA 
    - All categorical values were converted into one hot encoding 
 
-**What is the model performance? What is the complexity? What are the bottlenecks? 
+**What is the model performance? What is the complexity? Where are the bottlenecks?** 
 
 The model has a training set accuracy of 83% and validation set accuracy of 81%. 
 
 As the forward pass and backward pass in a feed forward neural network involves matrix multiplication and the time complexity of matrix multiplication is O(n^3) so the time complexity of neural network is higher than that. In fact, in a neural network the learning phase (backpropagation) is slower than the inference phase (forward propagation). This is because the backward pass involves gradient descent which has to be repeated many times.  
 
 As the neural network involves storing various weight matrices so the space complexity of a neural network is also higher than O(n^2). 
+
+**If you had more time, what improvements would you make, and in what order of priority?**
 
 The following improvements can be made in the given order of priority -  
 
