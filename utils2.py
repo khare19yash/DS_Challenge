@@ -138,5 +138,5 @@ def get_train_test_data(prep_train_data,target,prep_test_data,n_train,n_val,n_te
     #including a random y_test so iterator is compatible
     y_test = np.zeros((n_test),dtype=int)
     x_test = prep_test_data.values
-    x_test = x_test[800000:n_test+800000]
+    x_test = x_test[:n_test]
     return train_set,val_set,(x_test,y_test)
